@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Rahmah 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffc0cb, #ffe4e1);
+      text-align: center;
+      padding: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 2s;
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    #no {
+      background: #ddd;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hai Rahmah 🌸</h1>
+  <p>Aku udah lama pengen bilang ini...</p>
+  <p>Sejak kenal kamu, hari-hari aku jadi lebih berwarna 😊</p>
+  <p>Senyum kamu itu sederhana, tapi berarti banget buat aku.</p>
+
+  <h2>Mau nggak kamu jadi pacar aku? 💖</h2>
+
+  <button id="yes" onclick="iya()">Iya 💕</button>
+  <button id="no" onclick="tidak()">Tidak 🙂</button>
+
+  <h3 id="hasil"></h3>
+</div>
+
+<audio autoplay loop controls>
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function iya() {
+  document.getElementById("hasil").innerHTML =
+    "Makasih ya Rahmah 💖 Aku bakal jaga kamu baik-baik 😊";
+}
+
+function tidak() {
+  document.getElementById("hasil").innerHTML =
+    "Nggak apa-apa Rahmah 🙂 Makasih udah jujur. Aku tetap menghargai kamu.";
+}
+</script>
+
+</body>
+</html>
